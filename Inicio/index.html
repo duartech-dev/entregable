@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de tu página</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet"> <!-- Enlace al archivo CSS externo -->
+<style>
+    .carousel-item img {
+        height: 500px;
+        /* Ajusta la altura según tus necesidades */
+        object-fit: cover;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        
+        <!--Barra de inicio-->
+
+        <nav class="navbar col 12">
+            <div class="logo col 12" >
+                <img src="../assets/logo.jpg" width="100" height="100" alt="Logo de la empresa">
+            </div>
+            <ul class="nav-links col 12">
+                <li><a href="#">Inicio</a></li>
+
+                <div class="dropdown">
+                <li><a href="../Tienda/Tienda.html">Tienda</a></li>
+                    <div class="dropdown-content">
+                        <a href="#">Cocinas</a>
+                        <a href="#">Closet</a>
+                        <a href="#">Muebles de TV</a>
+                    </div>
+                </div>
+
+                
+
+                <li><a href="../Servicios/Servicios.html">Servicios</a></li>
+
+               
+                  
+               
+                <div class="dropdown">
+                    <li><a href="#">Promociones</a></li>
+                    <div class="dropdown-content">
+                        <a href="#">Descuentos</a>
+                        <a href="#">Ofertas</a>
+                        <a href="#">Paquetes</a>
+                    </div>
+                   
+                </div>
+              
+                
+            </ul>
+            <div class="icons">
+                <svg id="icon" width="800px" height="800px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                                stroke: #020202;
+                                stroke-miterlimit: 10;
+                                stroke-width: 1.91px;
+                            }
+                        </style>
+                    </defs>
+                    <polyline class="cls-1" points="7.21 15.82 22.48 12.96 22.48 4.36 4.15 4.36" />
+                    <path class="cls-1"
+                        d="M.52,1.5H3.39L7.2,15.82,5.54,18.31a1.48,1.48,0,0,0-.24.82h0a1.46,1.46,0,0,0,1.46,1.46h11.9" />
+                    <circle class="cls-1" cx="18.66" cy="21.55" r="0.95" />
+                    <circle class="cls-1" cx="9.11" cy="21.55" r="0.95" />
+                </svg>
+            </div>
+            
+                <div class="icons">
+                <svg id="icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+    
+            <div class="contact-info col 12">
+                <svg  width= "32" id="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                            }
+                        </style>
+                    </defs>
+                    <title />
+                    <path
+                        d="M26,29h-.17C6.18,27.87,3.39,11.29,3,6.23A3,3,0,0,1,5.76,3h5.51a2,2,0,0,1,1.86,1.26L14.65,8a2,2,0,0,1-.44,2.16l-2.13,2.15a9.37,9.37,0,0,0,7.58,7.6l2.17-2.15A2,2,0,0,1,24,17.35l3.77,1.51A2,2,0,0,1,29,20.72V26A3,3,0,0,1,26,29ZM6,5A1,1,0,0,0,5,6v.08C5.46,12,8.41,26,25.94,27A1,1,0,0,0,27,26.06V20.72l-3.77-1.51-2.87,2.85L19.88,22C11.18,20.91,10,12.21,10,12.12l-.06-.48,2.84-2.87L11.28,5Z"
+                        transform="translate(0)" />
+                    <rect class="cls-1" data-name="&lt;Transparent Rectangle&gt;" height="32" id="_Transparent_Rectangle_" width="32" style="stroke: #fff;" />
+                </svg>
+                <span>(318) 665-7064</span>
+            </div>
+            <div class="user">
+                <div class="dropdown">
+                                    <span><a class="Sesion" >Iniciar sesion<svg id="icon" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">                                  
+                                        <rect x="0" fill="none" width="24" height="24" />                                
+                                        <g>                                  
+                                            <path d="M7 10l5 5 5-5" />
+                                        </g>  
+                                    </svg></a></span>
+           
+                    <div class="dropdown-content">
+                        <a href="../Sesion/sesion.html">Cerrar Sesion</a>
+                        <a href="#">Mi Cuenta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact col 12">
+                <a href="../contactanos/contactanos.html">Contáctenos</a>
+            </div>
+        </nav>
+    </header>
+    
+    <!--IKEA-->
+<div class="contenedor"> 
+        <nav class="menu">
+            <ul class="menu-main">
+                <li>
+                    <a href="#" class="menu-toggle">
+                        <img src="../assets/aa.jpg" alt="Muebles">
+                        camas
+                    </a>
+    
+                    <ul class="submenu">
+                        <li><a href="#">Mesas y escritorios</a></li>
+                        <li><a href="#">Sillas</a></li>
+                        <li><a href="#">Muebles de comedor</a></li>
+                        <!-- Más opciones -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu-toggle">
+                        <img src="../assets/b.avif" alt="Almacenamiento">
+                        Cocinas
+                    </a>
+                    <!-- Similar submenu structure -->
+                    <ul class="submenu">
+                        <li><a href="#">Mesas y escritorios</a></li>
+                        <li><a href="#">Sillas</a></li>
+                        <li><a href="#">Muebles de comedor</a></li>
+                        <!-- Más opciones -->
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="#" class="menu-toggle">
+                        <img src="../assets/bar.avif" alt="Muebles">
+                        Zona de <br> bar
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Mesas y escritorios</a></li>
+                        <li><a href="#">Sillas</a></li>
+                        <li><a href="#">Muebles de comedor</a></li>
+                        <!-- Más opciones -->
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="#" class="menu-toggle">
+                        <img src="../assets/camas.avif" alt="Muebles">
+                        Muebles
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Mesas y escritorios</a></li>
+                        <li><a href="#">Sillas</a></li>
+                        <li><a href="#">Muebles de comedor</a></li>
+                        <!-- Más opciones -->
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="#" class="menu-toggle">
+                        <img src="../assets/closet.jpg" alt="Muebles">
+                        Closets
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Mesas y escritorios</a></li>
+                        <li><a href="#">Sillas</a></li>
+                        <li><a href="#">Muebles de comedor</a></li>
+                        <!-- Más opciones -->
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="#" class="menu-toggle">
+                        <img src="../assets/r.jpg" alt="Muebles">
+                        Decoraciones
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Mesas y escritorios</a></li>
+                        <li><a href="#">Sillas</a></li>
+                        <li><a href="#">Muebles de comedor</a></li>
+                        <!-- Más opciones -->
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="menu-toggle">
+                        <img src="../assets/sillas.avif" alt="Muebles">
+                        Interiores
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Mesas y escritorios</a></li>
+                        <li><a href="#">Sillas</a></li>
+                        <li><a href="#">Muebles de comedor</a></li>
+                        <!-- Más opciones -->
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="menu-toggle">
+                        <img src="../assets/vitri.jpg" alt="Muebles">
+                        Vitrinas
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#">Mesas y escritorios</a></li>
+                        <li><a href="#">Sillas</a></li>
+                        <li><a href="#">Muebles de comedor</a></li>
+                        <!-- Más opciones -->
+                    </ul>
+                </li>
+
+             
+            </div>
+
+        <!--carrusel-->
+        
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/22-ABRIL-scaled-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/closet1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/cocina.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        
+ 
+        <!--Tarjetas-->
+
+        <h1 class="epa">¡Muebles a precios convenientes para renovar tu hogar!</h1>
+        
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../assets/camas.avif" alt="Lámpara">
+                   
+                </div>
+                <div class="product-info" style="background-color: #333333;">
+<h2>Muebles para todo tu hogar</h2>
+<p>Descubre nuestra nueva colección de muebles para el hogar y encuentra el estilo que mejor se adapte a tu espacio.</p>
+                    <svg class="hola" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="product-card">
+                <a href="productos.html"></a>
+                <div class="product-image">
+                    <img src="../assets/bar.avif" alt="Lámpara">
+                    
+                </div>
+                <div class="product-info">
+                        <h2>Muebles para él y para ella</h2>
+                        <p>Combinaciones perfectas hechas por nosotros. Encuentra ideas originales para cada ocasión.</p>
+                <svg class="hola" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../assets/b.avif" alt="Lámpara">
+              
+                </div>
+                <div class="product-info" style="background-color: #5c3a29">
+                                        <h2>Taller de carpintería de alta calidad</h2>
+                                        <p>¿Estás buscando muebles sostenibles y de alta calidad? En nuestro taller de carpintería encontrarás los mejores
+                                            muebles.</p>
+<svg class="hola" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+</svg>
+                </div>
+            </div>
+        </div>
+       
+        
+            
+    <!--Diseños     
+    
+    -->
+   
+ 
+        <div class="diseños">
+            <div class="image-container">
+                <div class="image-item">
+                    <div class="decorative-shape"></div>
+                    <img src="../assets/7781eb708430bcc50d1885aee17f1c14.jpg" alt="Imagen 1 col-5">
+                    <div class="text-overlay col-7">
+                        <h2>Los mejores diseños de interiores del mundo</h2>
+                        <p>Sal de los caminos ya recorridos y descubre lugares inesperados y novedosos. ¡Aquí está nuestra guía
+                            definitiva de los mejores lugares secretos que debes visitar!</p>
+                        <button class="btn btn-personalizado2">Conoce más</button>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <div class="decorative-shape"></div>
+                    <img src="../assets/cob.jpg" alt="Imagen 2 col-5">
+                    <div class="text-overlay col-7">
+                        <h2>Muebles de verano</h2>
+                        <p>Los muebles de verano correctos pueden marcar la diferencia entre un buen momento y un momento
+                            extraordinario. Descubre nuestra selección para el día a día durante los cálidos meses de verano.
+                        </p>
+                        <button class="btn btn-personalizado2">Leer más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<div class="equipo">
+    <div class="administrador">
+        <img src="../assets/Tony.jpeg" alt="administrador">
+        <div class="Tony-carta">
+            <h1>Tony Fred Carpintero principal</h1>
+            <p>Nuestro fundador y principal carpintero, Tony, es la fuerza impulsora detrás de la compañía. Él ama
+                mantener sus manos llenas participando en el desarrollo de los muebles, marketing y estrategias de
+                experiencia del cliente.</p>
+        </div>
+    </div>
+    <div class="carpintero">
+        <img src="../assets/Mich.jpeg" alt="Carpintero">
+        <div class="Mich-carta">
+            <h1>Mich Stark Carpintero deportivo</h1>
+            <p>DECOCENTER está comprometido con la excelencia en la carpintería. Con años de experiencia en el sector,
+                nuestro equipo está dedicado a crear piezas únicas y de alta calidad para nuestros clientes.</p>
+        </div>
+    </div>
+    <div class="Diseñadora">
+        <img src="../assets/Aline.jpeg" alt="Diseñadora">
+        <div class="Aline-carta">
+            <h1>Aline Turner Diseñadora de interiores</h1>
+            <p>Aline es una de las personas icónicas en la vida que puede decir que les encanta lo que hacen. Ella es
+                mentora de más de 100 carpinteros internos y se ocupa de la comunidad de miles de carpinteros.</p>
+        </div>
+    </div>
+    <div class="Diseñadora1">
+        <img src="../assets/Iris.jpeg" alt="Diseñadora">
+        <div class="Iris-carta">
+            <h1>Iris Joe Diseñadora de interiores</h1>
+            <p>Iris, con su experiencia internacional, nos ayuda a entender fácilmente las tendencias globales en diseño
+                de interiores. Ella está decidida a impulsar el éxito y ofrece su perspicacia profesional para llevar la
+                empresa al siguiente nivel.</p>
+        </div>
+    </div>
+</div>
+<div class="propio-estilo">
+<svg class="rotar-svg" class="mover-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="2834.88" height="2834.88" viewBox="0 0 2834.88 2834.88">
+    <path class="sierra" fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1"
+        d="M 717.707031 1518.390625 C 656.910156 1499.699219 580.722656 1421.21875 573.59375 1316.960938 C 617.894531 1358.960938 681.464844 1368.441406 715.398438 1333.851562 C 661.511719 1300.078125 608.230469 1204.550781 628.328125 1101.988281 C 660.253906 1154.03125 719.199219 1179.640625 760.929688 1155.011719 C 717.621094 1108.441406 690.878906 1002.378906 736.839844 908.519531 C 754.203125 967.039062 804.515625 1007.039062 851.199219 994.050781 C 821.417969 937.851562 823.039062 828.488281 891.726562 749.71875 C 893.351562 810.75 931.59375 862.398438 980.050781 861.941406 C 965.828125 799.949219 995.703125 694.730469 1082.429688 636.421875 C 1068.210938 695.789062 1091.78125 755.578125 1138.710938 767.671875 C 1141.011719 704.121094 1197.101562 610.210938 1295.96875 576.339844 C 1266.859375 630 1274.160156 693.859375 1316.351562 717.691406 C 1335.03125 656.890625 1413.511719 580.699219 1517.78125 573.570312 C 1475.78125 617.878906 1466.289062 681.441406 1500.878906 715.378906 C 1534.660156 661.488281 1630.191406 608.210938 1732.738281 628.308594 C 1680.710938 660.230469 1655.089844 719.179688 1679.71875 760.910156 C 1726.300781 717.601562 1832.359375 690.859375 1926.21875 736.820312 C 1867.691406 754.191406 1827.699219 804.488281 1840.679688 851.179688 C 1896.878906 821.398438 2006.25 823.019531 2085.019531 891.710938 C 2023.988281 893.328125 1972.339844 931.578125 1972.800781 980.03125 C 2034.789062 965.808594 2140.011719 995.679688 2198.320312 1082.421875 C 2138.949219 1068.191406 2079.160156 1091.761719 2067.058594 1138.691406 C 2130.621094 1140.988281 2224.519531 1197.078125 2258.398438 1295.949219 C 2204.730469 1266.851562 2140.878906 1274.140625 2117.050781 1316.328125 C 2177.839844 1335.011719 2254.03125 1413.488281 2261.160156 1517.761719 C 2216.859375 1475.761719 2153.289062 1466.269531 2119.359375 1500.859375 C 2173.238281 1534.640625 2226.53125 1630.171875 2206.429688 1732.730469 C 2174.5 1680.691406 2115.558594 1655.070312 2073.820312 1679.699219 C 2117.128906 1726.28125 2143.878906 1832.339844 2097.921875 1926.199219 C 2080.550781 1867.675781 2030.238281 1827.679688 1983.558594 1840.664062 C 2013.339844 1896.863281 2011.710938 2006.230469 1943.03125 2084.996094 C 1941.398438 2023.972656 1903.160156 1972.316406 1854.699219 1972.777344 C 1868.921875 2034.769531 1839.050781 2139.992188 1752.320312 2198.296875 C 1766.539062 2138.929688 1742.96875 2079.136719 1696.050781 2067.042969 C 1693.738281 2130.601562 1637.648438 2224.507812 1538.789062 2258.378906 C 1567.890625 2204.714844 1560.601562 2140.855469 1518.398438 2117.03125 C 1499.71875 2177.824219 1421.238281 2254.015625 1316.980469 2261.144531 C 1358.980469 2216.839844 1368.460938 2153.273438 1333.871094 2119.335938 C 1300.089844 2173.226562 1204.570312 2226.507812 1102.011719 2206.40625 C 1154.050781 2174.484375 1179.660156 2115.535156 1155.03125 2073.804688 C 1108.460938 2117.113281 1002.398438 2143.855469 908.535156 2097.898438 C 967.0625 2080.53125 1007.058594 2030.222656 994.070312 1983.535156 C 937.875 2013.316406 828.503906 2011.695312 749.738281 1943.011719 C 810.765625 1941.382812 862.417969 1903.140625 861.957031 1854.683594 C 799.96875 1868.90625 694.746094 1839.035156 636.4375 1752.300781 C 695.808594 1766.519531 755.597656 1742.949219 767.695312 1696.03125 C 704.136719 1693.71875 610.230469 1637.628906 576.359375 1538.769531 C 630.023438 1567.871094 693.878906 1560.578125 717.707031 1518.390625 Z M 1417.378906 770.78125 C 1060.519531 770.78125 770.800781 1060.5 770.800781 1417.359375 C 770.800781 1774.210938 1060.519531 2063.933594 1417.378906 2063.933594 C 1774.230469 2063.933594 2063.949219 1774.210938 2063.949219 1417.359375 C 2063.949219 1060.5 1774.230469 770.78125 1417.378906 770.78125 Z M 1417.378906 797.890625 C 1759.269531 797.890625 2036.839844 1075.460938 2036.839844 1417.359375 C 2036.839844 1759.25 1759.269531 2036.824219 1417.378906 2036.824219 C 1075.480469 2036.824219 797.910156 1759.25 797.910156 1417.359375 C 797.910156 1075.460938 1075.480469 797.890625 1417.378906 797.890625 Z M 1417.378906 1268.441406 C 1335.191406 1268.441406 1268.460938 1335.171875 1268.460938 1417.359375 C 1268.460938 1499.550781 1335.191406 1566.28125 1417.378906 1566.28125 C 1499.570312 1566.28125 1566.300781 1499.550781 1566.300781 1417.359375 C 1566.300781 1335.171875 1499.570312 1268.441406 1417.378906 1268.441406 " />
+</svg>
+    <h1>Se auténtico,  crea tu propio estilo de hogar.</h1>
+    <p>Descubre nuestros diseños unicos y peronalizados para tu hogar.</p>
+    <button class="btn btn-personalizado">Descubrelo</button> 
+</div>
+
+
+    </main>
+<footer>
+   
+    <div class="FOOTER">
+        <div class="footer">
+            <h2 class="Decocenterr">DECOCENTER</h2>
+            <ul class="listas">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="Contactenos">Contactenos</a></li>
+                <li><a href="Politicas de Privacidad">Politicas de Privacidad</a></li>
+                <li><a href="Foro">Foro</a></li>
+            </ul>
+           
+        </div>
+        <div class="footer1">
+            <p>Somos una empresa enfocada en el diseño de interiores,Le damos un mejor aspecto <br>a sus espacios
+                con nuestros diseños unicos y modernos. </p>
+            <ul class="listas-contactos">
+                <li>
+                    <svg id="icon" stroke= "#fff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                }
+                            </style>
+                        </defs>
+                        <title />
+                        <path
+                            d="M26,29h-.17C6.18,27.87,3.39,11.29,3,6.23A3,3,0,0,1,5.76,3h5.51a2,2,0,0,1,1.86,1.26L14.65,8a2,2,0,0,1-.44,2.16l-2.13,2.15a9.37,9.37,0,0,0,7.58,7.6l2.17-2.15A2,2,0,0,1,24,17.35l3.77,1.51A2,2,0,0,1,29,20.72V26A3,3,0,0,1,26,29ZM6,5A1,1,0,0,0,5,6v.08C5.46,12,8.41,26,25.94,27A1,1,0,0,0,27,26.06V20.72l-3.77-1.51-2.87,2.85L19.88,22C11.18,20.91,10,12.21,10,12.12l-.06-.48,2.84-2.87L11.28,5Z"
+                            transform="translate(0)" />
+                        <rect stroke="Transparent" class="cls-1" data-name="&lt;Transparent Rectangle&gt;" height="32" id="_Transparent_Rectangle_" width="32" />
+                    </svg>
+                    <span class="numero"> (318)665-7064</span>
+                </li>
+
+                <li>
+                    <svg class="Email" class="feather feather-mail" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <span>Decocenter@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+    
+    <div class="footer2">
+    
+    <svg  class="Facebook" height="30px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title />
+        <desc />
+        <defs />
+        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+            <g id="Facebook" stroke="#fff" stroke-width="2" transform="translate(1.000000, 1.000000)">
+                <path
+                    d="M39.0432,58 L39.0432,35.696 L46.2462,35.696 L47.3202,27.003 L39.0432,27.003 L39.0432,21.454 C39.0432,18.94 39.7132,17.225 43.1872,17.225 L47.6142,17.219 L47.6142,9.45 C46.8472,9.342 44.2202,9.102 41.1612,9.102 C34.7782,9.102 30.4082,13.157 30.4082,20.596 L30.4082,27.003 L23.1822,27.003 L23.1822,35.696 L30.4082,35.696 L30.4082,58 L39.0432,58 L39.0432,58 Z"
+                    id="Stroke-1" />
+                <path
+                    d="M54,58 L4,58 C1.791,58 0,56.209 0,54 L0,4 C0,1.791 1.791,0 4,0 L54,0 C56.209,0 58,1.791 58,4 L58,54 C58,56.209 56.209,58 54,58 L54,58 Z"
+                    id="Stroke-99" stroke-linejoin="round" />
+            </g>
+        </g>
+    </svg>
+        
+    <svg class="Instagram" stroke="#fff" data-name="Layer 2" id="Layer_2" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M25.37,34.75H9.63A9.39,9.39,0,0,1,.25,25.37V9.63A9.39,9.39,0,0,1,9.63.25H25.37a9.39,9.39,0,0,1,9.38,9.38V25.37A9.39,9.39,0,0,1,25.37,34.75ZM9.63,2.75A6.89,6.89,0,0,0,2.75,9.63V25.37a6.89,6.89,0,0,0,6.88,6.88H25.37a6.89,6.89,0,0,0,6.88-6.88V9.63a6.89,6.89,0,0,0-6.88-6.88Z" />
+        <path
+            d="M17.5,26.53a9,9,0,1,1,9-9A9,9,0,0,1,17.5,26.53ZM17.5,11A6.53,6.53,0,1,0,24,17.5,6.54,6.54,0,0,0,17.5,11Z" />
+        <path d="M26.52,9.84a1.5,1.5,0,0,0,0-3,1.5,1.5,0,0,0,0,3Z" />
+    </svg>
+    
+    <svg class="Twitter" stroke="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+        width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+        <g>
+            <path
+                d="M21.159809,2C21.623091,2,22,2.376909,22,2.840191v18.319618C22,21.623091,21.623091,22,21.159809,22H2.84019   C2.37691,22,2,21.623091,2,21.159809V2.840191C2,2.376909,2.37691,2,2.84019,2H21.159809 M21.159809,1H2.84019   C1.82388,1,1,1.823879,1,2.840191v18.319618C1,22.176121,1.82388,23,2.84019,23h18.319618C22.176121,23,23,22.176121,23,21.159809   V2.840191C23,1.823879,22.176121,1,21.159809,1L21.159809,1z" />
+        </g>
+        <path
+            d="M13.523985,10.775623L19.480984,4h-1.41143l-5.174801,5.88195L8.764665,4H4l6.246901,8.895341L4,20h1.411431  l5.461361-6.21299L15.235336,20H20L13.523985,10.775623z M11.590199,12.973429l-0.633908-0.886331L5.920428,5.041171h2.168246  l4.065295,5.6884l0.631236,0.886331l5.283681,7.39365H15.90064L11.590199,12.973429z" />
+    </svg>
+    </div>
+    </div>
+   
+    <span class="Copyright">Copyright &copy;DECOCENTER</span>
+</footer>
+  <script src="script1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
