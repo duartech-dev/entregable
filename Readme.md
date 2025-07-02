@@ -2,8 +2,9 @@
 
 **DECOCENTER** es una página web moderna diseñada para exhibir y comercializar productos de carpintería, diseño de interiores y decoración del hogar. Este proyecto está construido con HTML, CSS personalizado y Bootstrap 5 para asegurar una experiencia fluida 
 
----
-## 🚀 Características
+----
+
+##### 🚀 Características
 
 
 - 🛒 Catálogo de productos dividido en categorías como cocinas, closets, muebles, etc.
